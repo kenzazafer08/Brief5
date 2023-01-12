@@ -54,7 +54,7 @@
 										<div class="col-sm-5">
 											<div class="single-welcome-hero">
 												<div class="welcome-hero-img">
-													<img src="assets/images/slider/slider1.png" alt="cloth covered accent chair">
+													<img src="<?php echo URLROOT?>/public/assets/images/slider/slider1.png" alt="cloth covered accent chair">
 												</div><!--/.welcome-hero-txt-->
 											</div><!--/.single-welcome-hero-->
 										</div><!--/.col-->
@@ -97,7 +97,7 @@
 										<div class="col-sm-5">
 											<div class="single-welcome-hero">
 												<div class="welcome-hero-img">
-													<img src="assets/images/slider/slider2.png" alt="mapple wood accent chair">
+													<img src="<?php echo URLROOT?>/public/assets/images/slider/slider2.png" alt="mapple wood accent chair">
 												</div><!--/.welcome-hero-txt-->
 											</div><!--/.single-welcome-hero-->
 										</div><!--/.col-->
@@ -140,7 +140,7 @@
 										<div class="col-sm-5">
 											<div class="single-welcome-hero">
 												<div class="welcome-hero-img">
-													<img src="assets/images/slider/slider3.png" alt="valvet accent arm chair">
+													<img src="<?php echo URLROOT?>/public/assets/images/slider/slider3.png" alt="valvet accent arm chair">
 												</div><!--/.welcome-hero-txt-->
 											</div><!--/.single-welcome-hero-->
 										</div><!--/.col-->
@@ -167,7 +167,7 @@
 						<div class="col-md-3">
 							<div class="single-populer-products">
 								<div class="single-populer-product-img mt40">
-									<img src="assets/images/populer-products/p1.png" alt="populer-products images">
+									<img src="<?php echo URLROOT?>/public/assets/images/populer-products/p1.png" alt="populer-products images">
 								</div>
 								<h2><a href="#">arm chair</a></h2>
 								<div class="single-populer-products-para">
@@ -181,7 +181,7 @@
 									<div class="row">
 										<div class="col-md-4 col-sm-12">
 											<div class="single-inner-populer-product-img">
-												<img src="assets/images/populer-products/p2.png" alt="populer-products images">
+												<img src="<?php echo URLROOT?>/public/assets/images/populer-products/p2.png" alt="populer-products images">
 											</div>
 										</div>
 										<div class="col-md-8 col-sm-12">
@@ -210,7 +210,7 @@
 							<div class="single-populer-products">
 								<div class="single-populer-products">
 									<div class="single-populer-product-img">
-										<img src="assets/images/populer-products/p3.png" alt="populer-products images">
+										<img src="<?php echo URLROOT?>/public/assets/images/populer-products/p3.png" alt="populer-products images">
 									</div>
 									<h2><a href="#">hanging lamp</a></h2>
 									<div class="single-populer-products-para">
@@ -239,7 +239,7 @@
 						<div class="col-sm-4">
 							<div class="single-blog">
 								<div class="single-blog-img">
-									<img src="assets/images/blog/b1.jpg" alt="blog image">
+									<img src="<?php echo URLROOT?>/public/assets/images/blog/b1.jpg" alt="blog image">
 									
 								</div>
 								<div class="single-blog-txt">
@@ -255,7 +255,7 @@
 						<div class="col-sm-4">
 							<div class="single-blog">
 								<div class="single-blog-img">
-									<img src="assets/images/blog/b2.jpg" alt="blog image">
+									<img src="<?php echo URLROOT?>/public/assets/images/blog/b2.jpg" alt="blog image">
 									
 								</div>
 								<div class="single-blog-txt">
@@ -270,7 +270,7 @@
 						<div class="col-sm-4">
 							<div class="single-blog">
 								<div class="single-blog-img">
-									<img src="assets/images/blog/b3.jpg" alt="blog image">
+									<img src="<?php echo URLROOT?>/public/assets/images/blog/b3.jpg" alt="blog image">
 									
 								</div>
 								<div class="single-blog-txt">

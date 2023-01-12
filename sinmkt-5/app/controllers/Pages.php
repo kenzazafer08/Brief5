@@ -1,7 +1,8 @@
 <?php
   class Pages extends Controller {
-    public function __construct(){
-     
+    public function __construct()
+    {
+        $this->productModel = $this->model('product');
     }
     
     public function index(){
@@ -18,14 +19,17 @@
       $this->view('pages/contact', $data);
     }
     public function feature(){
-      $data = [
-      ];
-
+      $products = $this->productModel->getProducts();
+        $data=[
+            'products' => $products
+        ];
       $this->view('pages/feature', $data);
     }
     public function newarrival(){
-      $data = [
-      ];
+      $products = $this->productModel->getProducts();
+        $data=[
+            'products' => $products
+        ];
 
       $this->view('pages/newarrival', $data);
     }

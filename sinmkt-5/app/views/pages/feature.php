@@ -9,8 +9,10 @@
             <h1 style="color: transparent;">featured products</h1>
         </div><!--/.section-header-->
         <div class="feature-content">
+        <?php foreach ($data['products'] as $product) : ?>
+                    <?php if (strtolower($product->name_cat) == 'featured') : ?>
                     <div class="single-feature">
-                        <img src="<?php echo URLROOT?>/public/assets/images/features/f1.jpg" alt="designed sofa" style="width: 80%; height: 400px;margin-left: 55px;">
+                        <img src="<?= $product->image ?>" alt="designed sofa" style="width: 80%; height: 400px;margin-left: 55px;">
                         <div class="single-feature-txt text-center">
                             <p>
                                 <i class="fa fa-star"></i>
@@ -20,55 +22,12 @@
                                 <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
                                 <span class="feature-review">(45 review)</span>
                             </p>
-                            <h3><a href="#">designed sofa</a></h3>
-                            <h5>$160.00</h5>
+                            <h3><a href="#"><?= $product->name ?></a></h3>
+                            <h5>$<?=number_format($product->price , 2)?></h5>
                         </div>
                     </div>
-                    <div class="single-feature">
-                        <img src="<?php echo URLROOT?>/public/assets/images/features/f2.jpg" alt="dinning table" style="width: 80%; height: 400px;margin-left: 55px;">
-                        <div class="single-feature-txt text-center">
-                            <p>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                <span class="feature-review">(45 review)</span>
-                            </p>
-                            <h3><a href="#">dinning table </a></h3>
-                            <h5>$200.00</h5>
-                        </div>
-                    </div>
-                    <div class="single-feature">
-                        <img src="<?php echo URLROOT?>/public/assets/images/features/f3.jpg" alt="chair and table" style="width: 80%; height: 400px;margin-left: 55px;">
-                        <div class="single-feature-txt text-center">
-                            <p>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                <span class="feature-review">(45 review)</span>
-                            </p>
-                            <h3><a href="#">chair and table</a></h3>
-                            <h5>$100.00</h5>
-                        </div>
-                    </div>
-                    <div class="single-feature">
-                        <img src="<?php echo URLROOT?>/public/assets/images/features/f4.jpg" alt="modern arm chair" style="width: 80%; height: 400px;margin-left: 55px;">
-                        <div class="single-feature-txt text-center">
-                            <p>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                <span class="feature-review">(45 review)</span>
-                            </p>
-                            <h3><a href="#">modern arm chair</a></h3>
-                            <h5>$299.00</h5>
-                        </div>
-                    </div>
+                    <?php endif; ?>
+            <?php endforeach; ?>
             </div>
         </div>
     </div><!--/.container-->
