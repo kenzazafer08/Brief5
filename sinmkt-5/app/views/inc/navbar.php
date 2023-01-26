@@ -77,7 +77,7 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand" href="index.html"><span><img src="<?php echo URLROOT?>/public/assets/images/logo.png" style="height: 70px; width:70px; margin-top: 0px; padding: 0px;"/></span></a>
+				                <a class="navbar-brand" href="index.html">Sine<span style="color: #e99c2e;">Mkt</span></a>
 
 				            </div><!--/.navbar-header-->
 				            <!-- End Header Navigation -->

@@ -1,9 +1,10 @@
 <?php 
 class Dashboard extends Controller{
+    public $dashboardModel;
     public function __construct()
     {
         if(!isLoggedIn()){
-            redirect('pages');
+            redirect('/pages');
         }
         $this->dashboardModel = $this->model('product');
     }
@@ -89,8 +90,11 @@ class Dashboard extends Controller{
             }
           
       }
-      public function delete($id)
+      public function delete($id = null)
     {
+        if($id == null){
+           redirect('/dashboard');
+        }
         if($this->dashboardModel->delete($id)){
             redirect('dashboard');
         }else{
@@ -99,6 +103,9 @@ class Dashboard extends Controller{
     }
     public function edit($id)
     {// Check the request method
+        if($id == null){
+            redirect('/dashboard');
+         }
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //process form
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);

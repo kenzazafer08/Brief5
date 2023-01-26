@@ -1,5 +1,6 @@
 <?php
 class admin extends Controller{
+    public $userModel;
   public function __construct()
     {
         $this->userModel = $this->model('user');
@@ -34,9 +35,6 @@ class admin extends Controller{
               $loggedInUser = $this->userModel->login($data['username'], $data['password']);
               if($loggedInUser){
                   //Create session 
-                  $this->createUserSession($loggedInUser->username);
-                  $username = $_SESSION['usename'];
-                  die($username);
                   $this->createUserSession($loggedInUser);
               }else{
                   $data['password_err'] = "Password is incorrect";
@@ -65,7 +63,6 @@ class admin extends Controller{
           redirect('dashboard');
       }
       public function logout(){
-      
         unset($_SESSION['username']);
         session_destroy();
         redirect('Pages');

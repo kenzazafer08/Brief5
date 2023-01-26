@@ -8,6 +8,6 @@
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
   // URL Root
-  define('URLROOT', 'http://localhost/sinmkt-5/');
+  define('URLROOT', 'http://localhost/sinmkt-5');
   // Site Name
   define('SITENAME', 'SineMkt');
